@@ -13,7 +13,8 @@
         max-width: 100%;
         min-height: 600px;
         border: 1px solid #000;
-        margin-right: 20px;     
+        margin-right: 20px;    
+        margin-bottom: 20px; 
         &__img {          
            cursor: pointer;          
            img {
@@ -77,8 +78,6 @@
         }        
     }
     &-item:last-child {
-        margin: 0;
+        margin-right: 0;
     }
-
-
 }
