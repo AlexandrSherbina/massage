@@ -35,7 +35,11 @@
             font-family: 'Montserrat', sans-serif;
             color: #191919; 
             text-decoration: none;             
-        }        
+        }   
+    }
+    &__item a:hover {
+        color: rgb(227, 208, 168);
+        transition: 0.2s ease-in-out;
     }   
     &__background {      
         height: 650px;

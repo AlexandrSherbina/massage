@@ -32,7 +32,7 @@
                 <ul class="header__nav">
                     <li class="header__item"><a href="#">Главная</a></li>
                     <li class="header__item"><a href="#serv">Услуги</a></li>
-                    <li class="header__item"><a href="#" class="header__rec">Онлайн-запись</a> </li>
+                    <li class="header__item"><a data-modal="consultation" href="#" class="header__rec">Онлайн-запись</a> </li>
                     <li class="header__item">
                         <a class="header__phone" href="tel:+380668162522">066-816-25-22</a>
                     </li>
@@ -55,49 +55,17 @@
                             <div class="services-item__old-price">300 грн.</div>
                             <div class="services-item__price">250 грн.</div>
                         </div>
-                        <button class="button">Записаться</button>
+                        <button class="button button_price">Записаться</button>
                     </div>
                     <div class="services-item__text">Описание услуги</div>
                     <div class="services-item__img">
                         <a href="#"><img src="image/mass1.jpg" alt="mas1"></a>  
                       </div>
                 </div>
-<!-- 
-                <div class="services-item">
-                    <div class="services-item__img">
-                      <a href="#"> <img src="image/mass2.jpg" alt="mas2"></a> 
-                    </div>
-                    <div class="services-item__wrapper">
-                        <div class="services-item__descr">Массаж глубоких тканей</div>
-                        <hr>
-                        <div class="services-item__time">1 ч.</div>
-                        <div class="services-item__prices">
-                            <div class="services-item__old-price">300 грн.</div>
-                            <div class="services-item__price">250 грн.</div>
-                        </div>
-                        <button class="button">Записаться</button>
-                    </div>                      
-                </div> -->
 
-                <!-- <div class="services-item">
-                    <div class="services-item__img">
-                       <a href="#"><img src="image/mass3.jpg" alt="mas3"></a> 
-                    </div>
-                    <div class="services-item__wrapper">
-                        <div class="services-item__descr">Точечная терапия</div>
-                        <hr>
-                        <div class="services-item__time">1 ч.</div>
-                        <div class="services-item__prices">
-                            <div class="services-item__old-price">300 грн.</div>
-                            <div class="services-item__price">250 грн.</div>
-                        </div>
-                        <button class="button">Записаться</button>
-                    </div>                   
-                </div> -->
             </div>
         </div>
-    </section>
-    
+    </section>    
    
     <footer class="footer">
         <div id="contact" class="footer__info footer__info-disabled">
@@ -118,7 +86,39 @@
         <div class="footer__copyright">&copy;2020 Массаж в Харькове. Сайт создан Sherbina.site</div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Связаться со мной</div>
+            <div class="modal__descr">Если сразу не отвечу я с вами свяжусь</div>
+            <form action="#" class="signup-form">
+                <input name="name" maxlength="50" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Добавьте номер телефона">
+                <textarea placeholder="Добавьте сообщение..." class="signup-massege" style="padding-left: 16px; padding-right: 10px;"></textarea>
+                <button class="button button-form">Отправить</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ</div>
+            <div class="modal__descr">Профилактический массаж</div>
+            <form action="#" class="signup-form">
+                <input name="name" maxlength="50" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Добавьте номер телефона">
+                <textarea placeholder="Добавьте сообщение..." class="signup-massege" style="padding-left: 16px; padding-right: 10px;"></textarea>
+                <button class="button button-form">Заказать</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку</div>
+            <div class="modal__descr">Я с вами свяжусь в ближайшее время!</div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
