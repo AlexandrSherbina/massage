@@ -28,9 +28,12 @@
             max-width: 100%;            
            }                   
         }
-        &__img img:hover {        
-          opacity: 0.8;
-        }  
+        &__img {
+            a img:hover {  
+                opacity: 0.8;     
+              }  
+        }
+       
         &__wrapper {
            padding: 20px;
                       
@@ -48,11 +51,11 @@
                 color: #000;
             }
         }
-        &__descr:hover {
+        &__descr a:hover {
             display: block;           
             margin: 0;
             transition: all .5s ;
-            opacity: 0.8;
+            color: rgba(rgb(68, 58, 58), 0.897);
         }  
         &__time {
             padding: 20px 0 10px 0;

@@ -1,4 +1,4 @@
-@media (max-width : 320px) {
+@media (max-width: 480px)  {
     .services {
         &__catalog {
             display: flex;
@@ -6,13 +6,33 @@
             align-items: center;
             padding: 20px;
             flex-wrap: wrap;
-        }
-        &-item {           
+        }       
+    }  
+}
+
+@media (max-width: 767px) {
+    .services {
+        &-item {
+            width: 100%;
             margin: 20px;
-        }   
+        }
+        &-item__img img {
+            width: 100%;
+        }
         &-item:last-child {
-            margin: 20;
+            margin: 20px;
         }  
+        
     }
-   
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .header {        
+        &__logo span {
+            font-size: 16px;
+        }
+        &__nav {
+            font-size: 12px;
+        }
+    }
+
 }
