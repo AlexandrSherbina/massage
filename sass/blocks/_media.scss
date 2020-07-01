@@ -8,6 +8,18 @@
             flex-wrap: wrap;
         }       
     }  
+    .articles {
+        &__item {
+            max-width: 100%;
+            padding: 0px 10px;
+        }
+        &__title {
+            font-size: 18px;
+        }
+        &__items-list {
+            font-size: 12px;            
+        }
+    }
 }
 
 @media (max-width: 767px) {

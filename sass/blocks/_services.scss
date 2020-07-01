@@ -1,5 +1,8 @@
 .services {
     padding-top: 40px;
+    &-top {
+        margin-top: 84px;
+    }
     &__catalog {
         display: flex;
         flex-wrap: wrap;
