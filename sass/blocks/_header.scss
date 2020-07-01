@@ -10,18 +10,20 @@
         padding: 11px 24px 113px 80px;
         background-color: rgba($color:#fff, $alpha: .56);
     }
-    &__logo {
-       span {
-        font-size: 22px;
-        text-decoration: none;
-        color: #000;  
-        padding-left: 10px;
-       }       
-       &-img {
-           width: 100px;
-           height: 100px;
-           border-radius: 100%;
-       }
+    &__logo {    
+        text-align: center;      
+        &-img {
+            width: 87px;
+            height: 87px;
+            border-radius: 100%;
+        }
+        span {
+            font-size: 16px;
+            text-decoration: none;
+            color: #000;  
+            padding-left: 10px;
+            
+        }   
     }
     &__logo:hover {       
             text-decoration: none;

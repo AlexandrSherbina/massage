@@ -1,4 +1,9 @@
 @media (max-width: 480px)  {
+    .header {
+        &__wrapper {           
+            padding-left: 20px;           
+        }
+    }
     .services {
         &__catalog {
             display: flex;
@@ -37,14 +42,108 @@
         
     }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 876px) {
+    .header {
+        &__nav {
+            display: none;
+        }         
+    }
+    .nav {
+        display: block;
+    }    
+    .menu {         
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0,0 ,0 ,.8 );
+        transition: 0.6s all;
+        z-index: 2;
+        &_active {
+            left: 0;
+        }           
+        &_item {
+            padding-right: 0;
+            border: none;
+            margin: 10px 0;
+            list-style-type: none; 
+            a {
+                text-decoration: none;
+                color: azure;
+            }
+            a:hover {
+                transition: 0.2s ease-in-out;
+                color: burlywood;
+            }
+        }
+
+        &_link {
+            font-size: 19px;
+            text-decoration: none;
+            opacity: 0.8;
+            color: aliceblue;
+        }
+        &_link:hover {
+            color: rgb(108, 138, 236);
+        }           
+    }
+    
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 33%;
+        transition: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        z-index: 2;
+        span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: chocolate;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }           
+        &_active {
+            span {
+                margin-bottom: -2px; 
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }               
+        }            
+    }   
+}  
+
+@media (max-width: 991px) {
     .header {        
         &__logo span {
-            font-size: 16px;
+            font-size: 12px;
         }
         &__nav {
             font-size: 12px;
         }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header {        
+        &__logo {
+            span {
+                font-size: 14px;
+                }
+        }         
     }
 
 }
