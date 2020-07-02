@@ -74,7 +74,7 @@ $('form').submit(function(e) {
     url: "mailer/smart.php",
     data: $(this).serialize()
   }).done(function() {
-    $(this).find("input", "textarea").val("");
+    $(this).find("input").val("");
     $('#consultation, #order').fadeOut();
     $('.overlay, #thanks').fadeIn('slow');
 

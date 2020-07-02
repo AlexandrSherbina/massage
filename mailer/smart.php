@@ -34,8 +34,8 @@ $mail->Body    = '
 		Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>
 	Номер телефона: ' . $phone . '<br>
-	E-mail: ' . $email . '' <br>
-	Комментарий: ' . $text . ';
+	Комментарий: ' . $text . ' <br>
+	E-mail: ' . $email . '';
 
 if(!$mail->send()) {
     return false;
