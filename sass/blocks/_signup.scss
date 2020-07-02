@@ -8,6 +8,15 @@
         max-width: 500px;
         margin: 0 auto;
         padding: 0 10px 80px 10px;
+        .error {
+            border: 2px solid rgb(238, 81, 81);
+        }
+        label.error {
+            border: none;
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
     }    
 }
 input, textarea {

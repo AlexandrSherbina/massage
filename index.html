@@ -50,9 +50,9 @@
             <div class="header__text">
                 <h1 class="title title__max">МАССАЖ В ХАРЬКОВЕ</h1>
                 <p class="description description__fs">Путь к здоровью</p>
-                <p class="description">Массаж издавна считался эффективным средством при болях и недомоганиях, вызванных травмами, перенапряжением или психическим истощением. С развитием массажного дела, как отдельной специальной отрасли медицины, вырабатывались наиболее эффективные техники и приемы массажа. В каждой отдельной части Мира, традиционно, они несли уникальный отпечаток культуры региона или местности. Но цель их была одна - принести облегчение страдающему пациенту, уменьшить боль в теле, снять усталость и нормализовать внутренние процессы в организме: обмен веществ, трофику (питание) тканей, снять стресс, расслабить психику и поднять жизненный тонус, создать хорошее настроение у пациента.</p>
-                <p class="description">Немаловажным фактором для эффективности массажа является внимательное и сочувственное отношение к пациенту. Проведя первичный опрос самого пациента, осмотр, получив информацию тактильно (прощупав), массажист сможет понять, какой именно сегмент тела беспокоит и оказывать на него максимально эффективное, но щадящее воздействие. Для меня, как массажиста, важно создать доверительную, располагающую атмосферу для человека, который пришел за помощью. </p>
-                <p class="description">Ведь только во взаимодействии мастера массажа и пациента можно достичь положительный результат от воздействия массажными приёмами и техниками, передаваемыми через руки массажиста, расслабить, принести облегчение от физических страданий.</p>
+                <p class="description description__text">Массаж издавна считался эффективным средством при болях и недомоганиях, вызванных травмами, перенапряжением или психическим истощением. С развитием массажного дела, как отдельной специальной отрасли медицины, вырабатывались наиболее эффективные техники и приемы массажа. В каждой отдельной части Мира, традиционно, они несли уникальный отпечаток культуры региона или местности. Но цель их была одна - принести облегчение страдающему пациенту, уменьшить боль в теле, снять усталость и нормализовать внутренние процессы в организме: обмен веществ, трофику (питание) тканей, снять стресс, расслабить психику и поднять жизненный тонус, создать хорошее настроение у пациента.</p>
+                <p class="description description__text">Немаловажным фактором для эффективности массажа является внимательное и сочувственное отношение к пациенту. Проведя первичный опрос самого пациента, осмотр, получив информацию тактильно (прощупав), массажист сможет понять, какой именно сегмент тела беспокоит и оказывать на него максимально эффективное, но щадящее воздействие. Для меня, как массажиста, важно создать доверительную, располагающую атмосферу для человека, который пришел за помощью. </p>
+                <p class="description description__text">Ведь только во взаимодействии мастера массажа и пациента можно достичь положительный результат от воздействия массажными приёмами и техниками, передаваемыми через руки массажиста, расслабить, принести облегчение от физических страданий.</p>
                 <p class="title title__list">Предлагаю для вашего оздоровления следующие виды массажа: </p>
                 <ul class="header__text-list">
                     <li class="header__text-item"> <a href="cat_1.html">Профилактический массаж.</a> </li>
@@ -63,8 +63,8 @@
                     <li class="header__text-item"><a href="cat_6.html">Спортивный массаж (тренировочный, подготовительный, восстановительный).</a></li>
                     <li class="header__text-item"><a href="cat_7.html">Общий массаж.</a></li>
                 </ul>
-                <p class="description">Индивидуальный подход к каждому пациенту, с учетом особенностей строения тела и состояния здоровья. Основные принципы в работе: доброжелательность, ответственность, эффективность. </p>
-                <p class="description">Приглашаю Вас к себе на массаж, где постараюсь сделать всё возможное, чтобы Вам стало легче!</p>
+                <p class="description description__text">Индивидуальный подход к каждому пациенту, с учетом особенностей строения тела и состояния здоровья. Основные принципы в работе: доброжелательность, ответственность, эффективность. </p>
+                <p class="description description__text">Приглашаю Вас к себе на массаж, где постараюсь сделать всё возможное, чтобы Вам стало легче!</p>
             </div>
         </div>      
     </header>
@@ -200,10 +200,10 @@
     <section class="signup">
         <div class="container">
             <h2 class="title title__min">СВЯЗАТЬСЯ СО МНОЙ</h2>
-        <form action="#" class="signup-form">
-            <input name="name" maxlength="50" required placeholder="Ваше имя" type="text">
+        <form id="signup-form_id" action="#" class="signup-form">
+            <input name="name" required placeholder="Ваше имя" type="text">
             <input name="phone" required placeholder="Добавьте номер телефона">
-            <textarea placeholder="Добавьте сообщение..." class="signup-massege" style="padding-left: 16px; padding-right: 10px;"></textarea>
+            <textarea name="comment" placeholder="Добавьте сообщение..." class="signup-massege" style="padding-left: 16px; padding-right: 10px;"></textarea>
             <button class="button button-form">Отправить</button>
         </form>
         </div>        
@@ -236,7 +236,7 @@
             <form action="#" class="signup-form">
                 <input name="name" maxlength="50" required placeholder="Ваше имя" type="text">
                 <input name="phone" required placeholder="Добавьте номер телефона">
-                <textarea placeholder="Добавьте сообщение..." class="signup-massege" style="padding-left: 16px; padding-right: 10px;"></textarea>
+                <textarea name="comment" placeholder="Добавьте сообщение..." class="signup-massege" style="padding-left: 16px; padding-right: 10px;"></textarea>
                 <button class="button button-form">Отправить</button>
             </form>
         </div>
@@ -248,7 +248,7 @@
             <form action="#" class="signup-form">
                 <input name="name" maxlength="50" required placeholder="Ваше имя" type="text">
                 <input name="phone" required placeholder="Добавьте номер телефона">
-                <textarea placeholder="Добавьте сообщение..." class="signup-massege" style="padding-left: 16px; padding-right: 10px;"></textarea>
+                <textarea name="comment" placeholder="Добавьте сообщение..." class="signup-massege" style="padding-left: 16px; padding-right: 10px;"></textarea>
                 <button class="button button-form">Заказать</button>
             </form>
         </div>
@@ -264,6 +264,8 @@
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

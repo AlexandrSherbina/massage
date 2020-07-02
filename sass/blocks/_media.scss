@@ -3,7 +3,27 @@
         &__wrapper {           
             padding-left: 20px;           
         }
+        &__background {
+            height: 300px;
+        }         
     }
+    .title {
+        &__max {
+            font-size: 20px;
+            font-weight: 700;
+            }
+        &__list {       
+            line-height: 45px;
+            }  
+        &__min {
+            font-size: 20px;             
+            }                             
+        } 
+    .description__text {
+        font-size: 16px;
+        text-align: justify;
+        padding: 0 10px;
+        }        
     .services {
         &__catalog {
             display: flex;
@@ -11,7 +31,12 @@
             align-items: center;
             padding: 20px;
             flex-wrap: wrap;
-        }       
+            } 
+        &-item__descr {
+            min-width: 195px;
+            min-height: 129px;
+            font-size: 19px;
+            }      
     }  
     .articles {
         &__item {
@@ -24,6 +49,24 @@
         &__items-list {
             font-size: 12px;            
         }
+    }
+    .modal {
+        &__close {
+            right: 18px;
+        }
+    }
+    .footer {       
+        &__info {
+            width: 280px;
+            height: 195px;
+            .footer__addr {
+                font-size: 12px;
+            }   
+            a {
+                font-size: 15px;  
+            }                 
+        }       
+         
     }
 }
 
@@ -145,5 +188,4 @@
                 }
         }         
     }
-
 }
