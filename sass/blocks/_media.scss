@@ -79,6 +79,18 @@
 }
 
 @media (max-width: 767px) {
+    .header {
+        &__wrapper {          
+            padding: 11px 24px 63px 3px;
+        }
+        
+        &__logo  {         
+            &-img {
+                width: 40px;
+                height: 40px;
+            }            
+        }        
+    }
     .services {
         &-item {
             width: 100%;
