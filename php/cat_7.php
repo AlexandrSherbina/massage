@@ -12,7 +12,7 @@
 <body>    
     <header class="header">   
         <div class="header__wrapper">
-            <a href="index.html" class="header__logo">
+            <a href="#" class="header__logo">
                 <img class="header__logo-img" src="image/logo_mao.png" alt="logo_mao">
                 <span>МАССАЖ В ХАРЬКОВЕ</span> 
             </a>
@@ -68,7 +68,7 @@
             </div>
         </div>
     </section>     
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div id="contact" class="footer__info footer__info-disabled">
             <address class="footer__addr">г.Харьков Салтовка, 604 мкр. трк Украина</address>
             <a href="tel:+380668162522">066-816-25-22</a>
@@ -117,9 +117,7 @@
             <div class="modal__subtitle">Спасибо за вашу заявку</div>
             <div class="modal__descr">Я с вами свяжусь в ближайшее время!</div>
         </div>
-    </div>
-
-    
+    </div> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
