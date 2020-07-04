@@ -55,7 +55,12 @@
             right: 18px;
         }
     }
-    .footer {       
+    .footer {  
+        display: flex;     
+        flex-direction: column;
+        &__info:nth-child(2) {
+            order: -1;
+        }
         &__info {
             width: 280px;
             height: 195px;
