@@ -59,6 +59,9 @@
         &__info {
             width: 280px;
             height: 195px;
+            position: unset;
+            transform: unset;
+            margin-bottom: 20px;
             .footer__addr {
                 font-size: 12px;
             }   
@@ -67,7 +70,7 @@
             }                 
         }       
          
-    }
+    }   
 }
 
 @media (max-width: 767px) {
@@ -81,8 +84,15 @@
         }
         &-item:last-child {
             margin: 20px;
-        }  
-        
+        }          
+    }
+    .pageup {
+        display: none;
+        position: fixed;
+        bottom: 40px;
+        right: 2px;
+        width: 35px;
+        height: 35px;
     }
 }
 @media (max-width: 876px) {
