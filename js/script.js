@@ -96,5 +96,26 @@ $("a[href^='#']").click(function(){
   $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
   return false;
 });
+// slick slider
+$(document).ready(function () {
+  $('.carousel__inner').slick({
+    infinite: true,
+    speed: 900, 
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrows/left.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/right.svg"></button>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {          
+        arrows: false
+        }
+      }
+    ]     
+  });
+});
 
 });
