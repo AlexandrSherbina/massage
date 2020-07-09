@@ -2,17 +2,18 @@
     padding-bottom: 81px;
     &__inner {
         position: relative;
-        max-width: 750px;
+        // max-width: 750px;
         margin: 0 auto;
         img {
+            object-fit: cover;
             width: 500px;
             height: 400px;
             margin: auto;
         }
     }
-    .slick-prev, .slick-next {
+    .prev, .next {
         position: absolute;
-        top: 50%;
+        top: 60%;
         transform: translateY(-50%);
         left: -66px;
         border: none;
@@ -22,8 +23,14 @@
             height: 50px;
         }
     }  
-    .slick-next  {
-        right: -66px;
+    .next  {      
+        right: -66px;        
         left: auto;
+    }
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }        
     }
 }

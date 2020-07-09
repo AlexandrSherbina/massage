@@ -3,38 +3,40 @@
 <head>
     <meta charset="UTF-8">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-reboot.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Массаж в Харькове</title>
 </head>
-<body>    
-    <!-- <header class="header">   
+<body>     
+
+    <header class="header" id="up">   
         <div class="header__wrapper">
             <a href="index.html" class="header__logo">
                 <img class="header__logo-img" src="image/logo_mao.png" alt="logo_mao">
-                <span>МАССАЖ В ХАРЬКОВЕ</span> 
+                <br>
+                <span>Massage Kharkov</span>  
             </a>
             <ul class="header__nav">
                 <li class="header__item"><a href="index.html">Главная</a></li>
-                <li class="header__item"><a href="articles.html">Полезные статьи</a></li>
+                <li class="header__item"><a href="articles.html">О массаже</a></li>
                 <li class="header__item"><a href="index.html#serv">Услуги</a></li>
+                <li class="header__item"><a href="index.html#rewievs">Отзывы</a></li>
                 <li class="header__item" ><a data-modal="consultation" href="#" class="header__rec">Онлайн-запись</a> </li>
                 <li class="header__item">
                     <a class="header__phone" href="tel:+380668162522">066-816-25-22</a>
                 </li>
-                <li class="header__item"> <a href="index.html#contact">Контакты</a></li>
-            </ul>
+                <li class="header__item"> <a href="#contact">Контакты</a></li>
+            </ul> 
             <nav class="nav">
                 <div class="container">
                     <ul class="menu">
-                        <li class="menu_item"><a href="#">Главная</a></li>
-                        <li class="menu_item"><a href="articles.html">Полезные статьи</a></li>
+                        <li class="menu_item"><a href="index.html">Главная</a></li>
+                        <li class="menu_item"><a href="articles.html">О массаже</a></li>
                         <li class="menu_item"><a href="index.html#serv">Услуги</a></li>
+                        <li class="menu_item"><a href="index.html#rewievs">Отзывы</a></li>
                         <li class="menu_item"><a data-modal="consultation" href="#" class="header__rec">Онлайн-запись</a></li>
                         <li class="menu_item"><a class="header__phone" href="tel:+380668162522">066-816-25-22</a></li>
-                        <li class="menu_item"> <a href="index.html#contact">Контакты</a></li>
+                        <li class="menu_item"> <a href="#contact">Контакты</a></li>
                     </ul>
                     <div class="hamburger">
                         <span></span>
@@ -42,11 +44,11 @@
                         <span></span>
                     </div>
                 </div>        
-            </nav> 
-        </div>        
-</header> -->
-
-//= template/header.html
+            </nav>                
+        </div>            
+      
+    </header>
+       
 <section class="content">
     <section class="services services-top">
         <div class="back"><a href="index.html">Назад</a></div>   
@@ -71,31 +73,27 @@
             </div>
         </div>
     </section> 
-</section>
-       
-    <!-- <footer class="footer">
-        <div id="contact" class="footer__info footer__info-disabled">
-            <address class="footer__addr">г.Харьков Салтовка, 604 мкр. трк Украина</address>
-            <a href="tel:+380668162522">066-816-25-22</a>
-            <div class="footer__mess">
-                <a href="viber://chat?number=%2B79+380957658421" class="footer__mess-item">
-                    <img src="icons/mess/viber.svg" alt="viber">
-                </a>
-                <a href="https://telegram.me/share/url?url=<URL>&text=<TEXT>" class="footer__mess-item">
-                    <img src="icons/mess/telegram.svg" alt="telegr">
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=+380957658421" class="footer__mess-item">
-                    <img src="icons/mess/whatsapp.svg" alt="watsup">
-                </a>
-            </div>           
+</section>     
+<footer class="footer">
+    <div id="contact" class="footer__info footer__info-disabled">
+        <address class="footer__addr">г.Харьков Салтовка, 604 мкр. трк Украина</address>
+        <a href="tel:+380668162522">066-816-25-22</a>
+        <div class="footer__mess">
+            <a href="viber://chat?number=%2B79+380957658421" class="footer__mess-item">
+                <img src="icons/mess/viber.svg" alt="viber">
+            </a>
+            <a href="https://telegram.me/share/url?url=<URL>&text=<TEXT>" class="footer__mess-item">
+                <img src="icons/mess/telegram.svg" alt="telegr">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+380957658421" class="footer__mess-item">
+                <img src="icons/mess/whatsapp.svg" alt="watsup">
+            </a>
         </div>
-        <div class="footer__copyright">&copy;2020 Массаж в Харькове. Сайт создан Sherbina.site</div>
-    </footer> -->
+    </div>
+    <div class="footer__copyright">&copy;2020 Массаж в Харькове. Сайт создан Sherbina.site</div>
+</footer>
 
-    //= template/footer.html
-
-
-    <!-- <div class="overlay">
+    <div class="overlay">
         <div class="modal" id="consultation">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Связаться со мной</div>
@@ -125,7 +123,7 @@
             <div class="modal__subtitle">Спасибо за вашу заявку</div>
             <div class="modal__descr">Я с вами свяжусь в ближайшее время!</div>
         </div>
-    </div> -->
+    </div>
 
     
 
@@ -133,7 +131,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>  
     <script src="js/script.js"></script>
 </body>
 </html>
