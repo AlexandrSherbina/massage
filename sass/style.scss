@@ -16,6 +16,7 @@ iframe {
     height: 630px;
     border: 0; 
 }
+
 .admin-panel {
     display: block;
     width: 139px;
@@ -42,6 +43,7 @@ iframe {
 
 @import 'blocks/nav';
 @import 'blocks/header';
+@import 'blocks/videocontent';
 @import 'blocks/services';
 @import 'blocks/articles';
 @import 'blocks/buttons';

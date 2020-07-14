@@ -1,0 +1,11 @@
+.videocontent {
+    padding-bottom: 49px;
+    &-width {
+        display: flex;
+        justify-content: center;
+        iframe {
+            width: 53%;
+            height: 436px;
+        }
+    }   
+}
