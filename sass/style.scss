@@ -18,10 +18,11 @@ iframe {
 }
 
 .admin-panel {
+    position: absolute;
     display: block;
     width: 139px;
     text-align: center;
-    transform: translateY(40px);
+    transform: translate(-68px, 40px);
     border-radius: 13%;
     border: 1px solid;
     background-color: rgba(255,255,255,.4);
@@ -57,5 +58,6 @@ iframe {
 @import 'blocks/footer';
 @import 'blocks/modal';
 @import 'blocks/pageup';
+@import 'blocks/error';
 @import 'blocks/media';
 
