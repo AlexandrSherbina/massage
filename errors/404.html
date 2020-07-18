@@ -5,114 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <!-- <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        html,
-        body {
-            height: 100%;
-        }
-        .error_404 {
-            position: relative;
-            text-align: center;
-            max-width: 1200px;
-            margin: 0 auto;
-
-            /* display: flex;
-            flex-direction: column;
-            height: 100%; */
-        }
-        .content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;     
-        } 
-        /* .footer {
-            flex: 0 0 auto;
-        } */ 
-
-    
-        .error_404-img--404 {
-            /* display: block;
-            position: absolute;
-            margin: 0 auto; */
-            /* margin-top: -94px; */
-            /* top: 0;
-            left: 0;
-            transform: translate(50%, -29%);
-            margin-bottom: -126px;
-            width: 50%;             */ 
-            margin-top: -94px; 
-            display: block;           
-            width: 50%;
-            transform: translateY(-20%);
-        }
-        .error_404-license {
-            font-size: smaller;
-            color: burlywood;
-            opacity: 0.4;
-        }
-        .error_404-license--abs {
-            position: absolute;
-            top: 913px;
-            left: 0;    
-        }    
-        .erorr_404-text {           
-            position: absolute;           
-            font-size: x-large;
-            text-shadow: #ff8800 0 0 2px;
-            word-wrap: break-word;            
-            margin: 10px;
-        }
-        .error_404-img--pic {
-            position: absolute;
-            top: 410px;
-            left: 0;
-            width: 100%;
-            margin-top: -144px;
-            height: 710px;
-            object-fit: cover;
-            z-index: -1;
-        }
-    
-        .error_404-btn {
-            display: block;
-            margin: 0 auto;
-            padding: 11px;
-            border-radius: 5px 5px 5px 5px;
-            background-color: #fff0dc75;           
-        }
-        .error_404-btn a {
-            text-decoration: none;
-            text-shadow: #E91E63 0 0 14px;
-            color: #FFEB3B;
-        }
-        .error_404-btn:hover {
-            background-color: #fff0dc4b;
-            transition: all 0.8s;
-        }
-    </style>     -->
-    <!-- <div class="error_404">
-        <div class="content">
-            <img class="error_404-img--404" src="/image/errimg/img404.png" alt="img404">
-            <a class="error_404-license" href='https://pngtree.com/so/404'>404 png
-                from pngtree.com</a>
-            <p class="erorr_404-text">#404 Страница не найдена <br>
-                ErrorDocument 404 https://www.vladibarmassage.com.ua/errors/404.html
-            </p>
-            <button class="error_404-btn" style="  ">
-                <a href="https://www.vladibarmassage.com.ua">вернутся на главную страницу</a>
-            </button>
-        </div>
-        <div class="footer">
-            <img  class="error_404-img--pic  " src="/image/errimg/massage.png" alt="massage">
-        <a class="error_404-license error_404-license--abs" href='https://pngtree.com/so/массаж'>массаж png from pngtree.com</a>
-        </div>        
-    </div> -->
+<body>    
     <style>
             body {
             display: grid;
@@ -120,17 +13,13 @@
             grid-template-rows: auto 1fr auto;
             overflow: hidden;
             background-color: lightgray;
-            }
-
-           
+            }           
             .wrapper {
                 position: relative;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                /* align-items: center; */
                 text-align: center;
-                /* max-width: 1200px; */
                 margin: 0;
                 padding: 0;
             }
@@ -165,11 +54,9 @@
             justify-content: center;
             align-items: center;              
             }
-
             body {
             font-family: system-ui, sans-serif;
             }
-
             .error_404-img--404, .error_404-img--pic {
                 width: 25%;
                 margin: 0 auto;
@@ -190,7 +77,6 @@
                 color: #ffffff;
                 text-shadow: beige 0 0 8px;
             }
-
             .error_404-btn {
                 width: 300px;
                 height: 50px;
@@ -208,9 +94,7 @@
                 box-shadow: 0 0 30px rgba(248, 185, 10, 0.8);
                 background-color: #e4d656;  
                 transition: all 0.8s;                           
-            }      
-                
-            
+            }    
             @media (max-width: 480px) {
                 footer {
                     margin: 0;
@@ -231,15 +115,12 @@
                     width: 190px;
                     font-size: 16px;
                 }
-
             }
             @media (max-width: 800px) {
                 .error_404-img--404 {
                     transform: scale(1);
-                }
-             
-            }
-           
+                }             
+            }           
     </style>
     <div class="wrapper">
         <header>       
@@ -251,7 +132,7 @@
             <p class="erorr_404-text">#404 Страница не найдена <br>
                 ErrorDocument 404 https://www.vladibarmassage.com.ua/errors/404.html
             </p>
-            <button class="error_404-btn" style="  ">
+            <button class="error_404-btn">
                 <a href="https://www.vladibarmassage.com.ua">вернутся на главную страницу</a>
             </button>
        
@@ -261,7 +142,5 @@
             <a class="error_404-license error_404-license--abs" href='https://pngtree.com/so/массаж'>массаж png from pngtree.com</a>
         </footer>
     </div>
-  
-   
 </body>
 </html>

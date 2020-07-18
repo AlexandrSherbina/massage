@@ -61,6 +61,7 @@
             color: rgba(rgb(68, 58, 58), 0.897);
         }  
         &__time {
+            display: none; // отключил часы 
             padding: 20px 0 10px 0;
         }  
         &__prices {
@@ -68,6 +69,7 @@
             flex-direction: column;  
         }
         &__old-price {
+            display: none;  // отключил старую цену
             font-family: 'Montserrat', sans-serif;
             color: #646464da;
             text-decoration: line-through;                      
